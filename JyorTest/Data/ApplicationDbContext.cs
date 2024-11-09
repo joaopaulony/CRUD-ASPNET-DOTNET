@@ -9,4 +9,7 @@ public class ApplicationDbContext : IdentityDbContext
         : base(options)
     {
     }
+
+    public DbSet<Student> Students { get; set; } = default!;
+    public DbSet<Premium> Premiums { get; set; } = default!;
 }
